@@ -1,11 +1,11 @@
 #head {
     background: rgb(219, 219, 226);
-    height: 8%;
+    height: 10%;
     width: 100%;
 }
 
 #add-head {
-    height: 8%;
+    height: 10%;
     width: 100%;
 }
 
@@ -24,31 +24,34 @@
 }
 
 #meun {
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
     float: left;
 }
 
 #add {
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
     float: right;
 }
 
 #cont {
-    height: 92%;
+    height: 90%;
     width: 100%;
     overflow: scroll;
+    overflow: hidden;
 }
 
 .item {
-    height: 40px;
+    height: 50px;
     width: 100%;
-    padding-top: 10px;
+    padding-top: 15px;
     text-align: center;
     font-size: 25px;
     border-bottom: 1px solid rgb(231, 219, 219);
     overflow: hidden;
+    position: relative;
+    top: -65px;
 }
 
 .view {
@@ -60,12 +63,17 @@
 }
 
 .del {
-    height: 125%;
-    width: 15%;
+    height: 130%;
+    width: 25%;
     float: right;
     position: relative;
-    top: -50px;
-    left: 15%;
+    top: -65px;
+    left: 25%;
+    background: rgb(233, 115, 115);
+    color: white;
+    text-align: center;
+    padding-top: 4.5%;
+    font-size: 90%;
 }
 
 #add-background {
@@ -78,14 +86,14 @@
 }
 
 #return {
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
     float: left;
 }
 
 #right {
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
     float: right;
 }
 
@@ -93,7 +101,7 @@
     position: absolute;
     left: 5%;
     width: 90%;
-    top: 12%;
+    top: 13%;
     height: 80%;
     font-size: 25px;
     outline: 0px;
