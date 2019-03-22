@@ -1,6 +1,8 @@
 $(document).ready(function() {
-    var view = document.getElementsByClassName("view")[0];
-    touchDown(view)
+    var view = document.getElementsByClassName("view");
+    for (var i = 0; i < view.length; i++) {
+        touchDown(view[i])
+    }
     meun();
     add();
 });
