@@ -132,7 +132,7 @@ function contTouchDown() {
     var width = document.body.clientWidth * 0.2;
     cont1.addEventListener('touchstart', function(event) {
         event.stopPropagation();
-        event.preventDefault();
+        // event.preventDefault();
         var beginX = event.targetTouches[0].screenX;
         var scroll, endX;
 
@@ -158,7 +158,7 @@ function contTouchDown() {
 
         function endHandler(event) {
             event.stopPropagation();
-            event.preventDefault();
+            // event.preventDefault();
 
             if (document.removeChild) {
                 document.removeEventListener("touchend", endHandler, true);
