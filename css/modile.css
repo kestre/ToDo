@@ -43,11 +43,11 @@
 }
 
 .item {
-    height: 50px;
+    height: 65px;
     width: 100%;
-    padding-top: 15px;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
+    line-height: 65px;
     border-bottom: 1px solid rgb(231, 219, 219);
     overflow: hidden;
     position: relative;
@@ -63,17 +63,16 @@
 }
 
 .del {
-    height: 130%;
-    width: 25%;
+    height: 65px;
+    width: 20%;
     float: right;
     position: relative;
     top: -65px;
-    left: 25%;
+    left: 20%;
     background: rgb(233, 115, 115);
     color: white;
-    text-align: center;
-    padding-top: 4.5%;
-    font-size: 90%;
+    line-height: 65px;
+    font-size: 80%;
 }
 
 #add-background {

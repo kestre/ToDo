@@ -7,6 +7,7 @@
     <title>Todo</title>
     <link href="css/modile.css" rel="stylesheet" type="text/css">
     <link href="css/global.css" rel="stylesheet" type="text/css">
+    <link href="css/laside.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="js/lib/jquery-3.3.1.js"></script>
     <!-- <script src="js/modileJs.js"></script> -->
     <script src="js/modile.js"></script>
@@ -29,15 +30,19 @@
                 <div class="item-text">
                     <p>kestre</p>
                 </div>
-                <div class="del">删除</div>
+                <div class="del">
+                    <p>删除</p>
+                </div>
             </div>
         </div>
         <div class="item">
             <div class="view">
                 <div class="item-text">
-                    <p>左上角点击添加</p>
+                    <p>右上角点击添加</p>
                 </div>
-                <div class="del">删除</div>
+                <div class="del">
+                    <p>删除</p>
+                </div>
             </div>
         </div>
         <div class="item">
@@ -45,7 +50,9 @@
                 <div class="item-text">
                     <p>左滑删除</p>
                 </div>
-                <div class="del">删除</div>
+                <div class="del">
+                    <p>删除</p>
+                </div>
             </div>
         </div>
         <div class="item">
@@ -53,11 +60,13 @@
                 <div class="item-text" style="opacity:0.5">
                     <p style="text-Decoration:line-through">完成</p>
                 </div>
-                <div class="del">删除</div>
+                <div class="del">
+                    <p>删除</p>
+                </div>
             </div>
         </div>
     </section>
-    <section id="add-background">
+    <div id="add-background">
         <div id="add-head">
             <div class="head-item">
                 <div id="return">
@@ -69,7 +78,20 @@
             </div>
         </div>
         <div id="add-input" contenteditable="true" autofocus="autofocus"></div>
-    </section>
+    </div>
+    <aside id="lcont">
+        <div id="laside">
+            <div id="mes">
+                <img src="img/background.jpg" alt="" width="100%" height="100%">
+                <div id="user">kestre</div>
+            </div>
+            <div id="sele">
+                <div class="litem">安排</div>
+                <div class="litem">关于</div>
+            </div>
+        </div>
+        <div id="shadow"></div>
+    </aside>
 </body>
 
 </html>

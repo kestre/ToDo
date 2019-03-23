@@ -1,7 +1,7 @@
-window.onload = function() {
-    var view = document.getElementsByClassName("view")[0];
-    touchDown(view)
-}
+// window.onload = function() {
+//     var view = document.getElementsByClassName("view")[0];
+//     touchDown(view)
+// }
 
 //电脑鼠标事件
 //onmousedown(this)
