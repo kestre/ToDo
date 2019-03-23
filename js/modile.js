@@ -113,7 +113,7 @@ function touchDown(v) {
                 }
             }
         }
-    });
+    }, { passive: false });
 }
 //这是用于完成待办时间的处理函数
 function done(v) {
@@ -173,5 +173,5 @@ function contTouchDown() {
                 }
             }
         }
-    })
+    }, { passive: false })
 }
