@@ -132,7 +132,7 @@ function contTouchDown() {
     var width = document.body.clientWidth * 0.2;
     cont1.addEventListener('touchstart', function(event) {
         event.stopPropagation();
-        // event.preventDefault();
+        event.preventDefault();
         var beginX = event.targetTouches[0].screenX;
         var scroll, endX;
 
@@ -143,7 +143,7 @@ function contTouchDown() {
 
         function moveHandler(event) {
             event.stopPropagation();
-            // event.preventDefault();
+            event.preventDefault();
             endX = event.targetTouches[0].screenX;
             var lLeft = parseInt(window.getComputedStyle(lcont)['left']);
             scroll = endX - beginX;
@@ -158,7 +158,7 @@ function contTouchDown() {
 
         function endHandler(event) {
             event.stopPropagation();
-            // event.preventDefault();
+            event.preventDefault();
 
             if (document.removeChild) {
                 document.removeEventListener("touchend", endHandler, true);
