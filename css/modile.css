@@ -33,14 +33,14 @@ nav #add {
     width: 40px;
 }
 
-section {
+#list {
     height: 90%;
     width: 100%;
     overflow: scroll;
     overflow: hidden;
 }
 
-section .item {
+#list .item {
     height: 65px;
     width: 100%;
     text-align: center;
@@ -52,13 +52,21 @@ section .item {
     top: -65px;
 }
 
+#list .item section {
+    width: 120%;
+    position: relative;
+}
+
+#list .item-text {
+    width: 80%
+}
+
 .del {
     height: 65px;
     width: 20%;
-    float: right;
     position: relative;
     top: -65px;
-    left: 20%;
+    left: 84%;
     background: rgb(233, 115, 115);
     color: white;
     line-height: 65px;

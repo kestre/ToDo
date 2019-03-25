@@ -6,22 +6,13 @@
     left: -100%;
 }
 
-#laside {
-    height: 100%;
+#left-aside #message {
     width: 75%;
+    height: 100%;
     overflow: hidden;
 }
 
-#shadow {
-    height: 100%;
-    width: 25%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: rgb(167, 147, 147, 0.3)
-}
-
-#mes {
+#left-aside header {
     width: 100%;
     height: 150px;
     overflow: hidden;
@@ -37,13 +28,12 @@
     left: 20px;
 }
 
-#sele {
-    background: white;
+#left-aside-list {
     width: 100%;
     height: 100%;
 }
 
-.litem {
+#left-aside-list .left-aside-item {
     position: relative;
     top: 20px;
     left: 40px;
@@ -51,4 +41,13 @@
     width: 50px;
     height: 30px;
     text-align: center;
+}
+
+#shadow {
+    height: 100%;
+    width: 25%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgb(167, 147, 147, 0.3)
 }

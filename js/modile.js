@@ -1,8 +1,9 @@
 $(document).ready(function() {
-    var view = document.getElementsByClassName("view");
+    var view = document.getElementsByClassName("item");
     for (var i = 0; i < view.length; i++) {
-        touchDown(view[i])
+        touchDown(view[i].childNodes[1])
     }
+    console.log(view[1])
     meun();
     add();
     contTouchDown();
@@ -49,7 +50,7 @@ function add() {
 //用js原生写的移动端触屏事件
 function touchDown(v) {
     var width = document.body.clientWidth * 0.2;
-    var lcont = document.getElementById("lcont");
+    var lcont = document.getElementById("left-aside");
 
     v.childNodes[3].addEventListener('click', () => {
         v.parentNode.parentNode.removeChild(v.parentNode);
