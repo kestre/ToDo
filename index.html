@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Todo</title>
-    <link href="css/modile.css" rel="stylesheet" type="text/css">
     <link href="css/global.css" rel="stylesheet" type="text/css">
+    <link href="css/modile.css" rel="stylesheet" type="text/css">
     <link href="css/laside.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="js/lib/jquery-3.3.1.js"></script>
     <!-- <script src="js/modileJs.js"></script> -->
@@ -14,83 +14,69 @@
 </head>
 
 <body>
-    <header id="head">
-        <nav class="head-item">
+    <header>
+        <nav>
             <div id="meun">
-                <img src="img/meun.png" alt="" class="icon">
+                <img src="img/meun.png" alt="meun" class="icon">
+            </div>
+            <div id="title">
+                <p>ToDo</p>
             </div>
             <div id="add">
-                <img src="img/add.png" alt="" class="icon">
+                <img src="img/add.png" alt="+" class="icon">
             </div>
         </nav>
     </header>
-    <section id="cont">
-        <div class="item">
-            <div class="view">
+    <section>
+        <article class="item">
+            <section>
                 <div class="item-text">
                     <p>kestre</p>
                 </div>
                 <div class="del">
                     <p>删除</p>
                 </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="view">
+            </section>
+        </article>
+        <article class="item">
+            <section>
                 <div class="item-text">
-                    <p>右上角点击添加</p>
+                    <p>右上角添加1</p>
                 </div>
                 <div class="del">
                     <p>删除</p>
                 </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="view">
-                <div class="item-text">
-                    <p>左滑删除</p>
-                </div>
-                <div class="del">
-                    <p>删除</p>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="view">
-                <div class="item-text" style="opacity:0.5">
-                    <p style="text-Decoration:line-through">完成</p>
-                </div>
-                <div class="del">
-                    <p>删除</p>
-                </div>
-            </div>
-        </div>
+            </section>
+        </article>
     </section>
-    <div id="add-background">
-        <div id="add-head">
-            <div class="head-item">
-                <div id="return">
-                    <img src="img/return.png" alt=" " class="icon">
-                </div>
-                <div id="right">
-                    <img src="img/right.png" alt=" " class="icon">
-                </div>
-            </div>
-        </div>
-        <div id="add-input" contenteditable="true" autofocus="autofocus"></div>
-    </div>
-    <aside id="lcont">
-        <div id="laside">
-            <div id="mes">
+    <aside id="left-aside">
+        <section id="laside">
+            <article id="mes">
                 <img src="img/background.jpg" alt="" width="100%" height="100%">
                 <div id="user">kestre</div>
-            </div>
-            <div id="sele">
+            </article>
+            <article id="sele">
                 <div class="litem">安排</div>
                 <div class="litem">关于</div>
+            </article>
+        </section>
+        <section>
+            <div id="shadow"></div>
+        </section>
+    </aside>
+    <aside id="add-aside">
+        <section id="add-head">
+            <div id="return">
+                <img src="img/return.png" alt="返回" class="icon">
             </div>
-        </div>
-        <div id="shadow"></div>
+            <div id="title2">
+                <p></p>
+            </div>
+            <div id="right">
+                <img src="img/right.png" alt="完成" class="icon">
+            </div>
+        </section>
+        <div id="add-textarea" contenteditable="true" autofocus="autofocus"></div>
     </aside>
 </body>
 

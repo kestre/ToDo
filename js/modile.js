@@ -10,29 +10,30 @@ $(document).ready(function() {
 //菜单功能
 function meun() {
     $("#meun").click(function() {
-        $("#lcont")[0].style.left = 0 + "px";
+        $("#left-aside")[0].style.left = 0 + "px";
     })
     $("#shadow").click(function() {
-        $("#lcont")[0].style.left = -100 + "%";
+        $("#left-aside")[0].style.left = -100 + "%";
     })
 }
 //添加ToDo内容
 function add() {
     $("#return").click(function() {
-        $("#add-background").hide();
+        $("#add-textarea")[0].textContent = "";
+        $("#add-aside").hide();
     })
 
     $("#add").click(function() {
-        $("#add-background").fadeIn();
+        $("#add-aside").fadeIn();
         var hrt = document.documentElement.clientHeight;
-        document.getElementById('add-background').style.height = hrt + 'px'
-        $("#add-input").focus();
+        document.getElementById('add-head').parentNode.style.height = hrt + 'px'
+        $("#add-textarea").focus();
     })
 
     $("#right").click(function() {
-        var text = $("#add-input")[0].textContent
+        var text = $("#add-textarea")[0].textContent
         if (text != "") {
-            var node = $("#cont div").clone(true)[0];
+            var node = $(".item").clone(true)[0];
             node.childNodes[1].children[0].children[0].innerText = text;
             node.childNodes[1].style.left = 0;
             touchDown(node.childNodes[1])
@@ -40,9 +41,9 @@ function add() {
             var tar = document.getElementsByClassName("item")[0];
             var parent = tar.parentNode
             parent.insertBefore(node, tar.nextSibling);
-            $("#add-input")[0].textContent = "";
+            $("#add-textarea")[0].textContent = "";
         }
-        $("#add-background").hide();
+        $("#add-aside").hide();
     })
 }
 //用js原生写的移动端触屏事件
@@ -127,8 +128,9 @@ function done(v) {
 }
 //cont中拉出侧边栏的触摸函数
 function contTouchDown() {
-    var cont1 = document.getElementById("cont");
-    var lcont = document.getElementById("lcont");
+    var cont1 = document.getElementsByTagName("section")[0];
+    // var cont1 = document.getElementById("cont");
+    var lcont = document.getElementById("left-aside");
     var width = document.body.clientWidth * 0.2;
     cont1.addEventListener('touchstart', function(event) {
         event.stopPropagation();

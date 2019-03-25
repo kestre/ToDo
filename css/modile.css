@@ -1,48 +1,46 @@
-#head {
+header nav {
     background: rgb(219, 219, 226);
     height: 60px;
     width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
-#add-head {
-    height: 10%;
-    width: 100%;
+nav div {
+    margin-top: 10px;
+    height: 40px;
+}
+
+nav #meun {
+    width: 40px;
+    margin-left: 10px;
+}
+
+nav #title {
+    flex: 1;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+nav #add {
+    width: 40px;
+    margin-right: 10px;
 }
 
 .icon {
-    height: 100%;
-    width: 100%;
+    height: 40px;
+    width: 40px;
 }
 
-.head-item {
-    display: block;
-    position: relative;
-    top: 20%;
-    left: 3%;
-    height: 80%;
-    width: 94%;
-}
-
-#meun {
-    height: 35px;
-    width: 35px;
-    float: left;
-}
-
-#add {
-    height: 35px;
-    width: 35px;
-    float: right;
-}
-
-#cont {
+section {
     height: 90%;
     width: 100%;
     overflow: scroll;
     overflow: hidden;
 }
 
-.item {
+section .item {
     height: 65px;
     width: 100%;
     text-align: center;
@@ -52,14 +50,6 @@
     overflow: hidden;
     position: relative;
     top: -65px;
-}
-
-.view {
-    position: relative;
-}
-
-.item-text {
-    width: 100%;
 }
 
 .del {
@@ -75,7 +65,7 @@
     font-size: 80%;
 }
 
-#add-background {
+#add-aside {
     height: 100%;
     width: 100%;
     background: rgb(255, 255, 255);
@@ -84,24 +74,40 @@
     display: none;
 }
 
-#return {
-    height: 35px;
-    width: 35px;
-    float: left;
+#add-head {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
-#right {
-    height: 35px;
-    width: 35px;
-    float: right;
+#add-aside div {
+    margin-top: 10px;
+    height: 40px;
 }
 
-#add-input {
+#add-aside #return {
+    width: 40px;
+    margin-left: 10px;
+}
+
+#add-aside #title2 {
+    flex: 1;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+#add-aside #right {
+    width: 40px;
+    margin-right: 10px;
+}
+
+#add-textarea {
     position: absolute;
     left: 5%;
     width: 90%;
     top: 13%;
-    height: 80%;
-    font-size: 25px;
+    font-size: 20px;
     outline: 0px;
 }
