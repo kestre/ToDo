@@ -74,7 +74,7 @@ function touchDown(v) {
             var lLeft = parseInt(window.getComputedStyle(lcont)['left']);
             scroll = endX - beginX;
             if (beginX > width * 2) {
-                if (scroll < -10 || scroll > 10) {
+                if (scroll < -15 || scroll > 15) {
                     if (scroll + vLeft >= 0) {
                         v.style.left = 0 + "px"
                     } else if (scroll >= -width) {
@@ -98,7 +98,7 @@ function touchDown(v) {
                 document.removeEventListener("touchmove", moveHandler, true);
 
             }
-            if ((endX - beginX) > -10 && (endX - beginX) < 10) {
+            if ((endX - beginX) > -15 && (endX - beginX) < 15) {
                 done(v);
             }
             if (beginX > width * 2)
