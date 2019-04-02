@@ -3,7 +3,6 @@ $(document).ready(function() {
     for (var i = 0; i < view.length; i++) {
         touchDown(view[i].childNodes[1])
     }
-    console.log(view[1])
     meun();
     add();
     contTouchDown();
@@ -52,6 +51,7 @@ function touchDown(v) {
     var width = document.body.clientWidth * 0.2;
     var lcont = document.getElementById("left-aside");
 
+    hide_delete();
     v.childNodes[3].addEventListener('click', () => {
         v.parentNode.parentNode.removeChild(v.parentNode);
     })
@@ -133,6 +133,8 @@ function contTouchDown() {
     // var cont1 = document.getElementById("cont");
     var lcont = document.getElementById("left-aside");
     var width = document.body.clientWidth * 0.2;
+
+    hide_delete();
     cont1.addEventListener('touchstart', function(event) {
         event.stopPropagation();
         // event.preventDefault();
@@ -177,4 +179,11 @@ function contTouchDown() {
             }
         }
     }, { passive: false })
+}
+
+function hide_delete() {
+    let list = $(".item")
+    for (var i = 0; i < list.length; i++) {
+        list[i].childNodes[1].style.left = 0 + "px"
+    }
 }
